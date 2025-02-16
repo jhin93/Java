@@ -18,8 +18,10 @@
 *.zip
 *.tar.gz
 *.rar
-
+ㅣ
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
 /.metadata/
+MyFirstJavaProject/.DS_Store
+MyFirstJavaProject/.project
