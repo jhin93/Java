@@ -56,5 +56,16 @@ public class FirstClass {
 		// power operation
 		System.out.println("x pow 4: " + Math.pow(x, 4)); // x pow 4: 625.0
 		
+		/*
+		 * String operations
+		 */
+		
+		// String concatenation
+		String fullName = "Brandon" + " " + "Lee" + " " + "Krakowsky";
+		
+		// String Method for uppercase
+		String upperCaseName = fullName.toUpperCase();
+		System.out.println("Uppercase name: " + upperCaseName);
+
 	}
 }
