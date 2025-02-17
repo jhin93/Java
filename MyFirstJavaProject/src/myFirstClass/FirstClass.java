@@ -115,7 +115,31 @@ public class FirstClass {
 			System.out.println("k: " + k);
 		}
 
-		// do while loop
+		/*
+		 *  Casting
+		 */
 		
+		 // Cast int to String
+		 String intToString = Integer.toString(1);
+
+		 // Cast double to String
+		 String doubleToString = Double.toString(1.1);
+
+		 // Print the values and type of values
+		 System.out.println();
+		 System.out.println(intToString + " " + intToString.getClass());
+		 System.out.println(doubleToString + " " + doubleToString.getClass());
+
+		 //Cast String to int
+		 int stringToInt = Integer.parseInt("1");
+
+		 //Cast String to double
+		 double stringToDouble = Double.parseDouble("1.1");
+
+		 //Print the values and type of values
+		 System.out.println(stringToDouble);
+		 //cast to Object then call getClass()
+		 System.out.println(((Object)stringToDouble).getClass());
+		 
 	}
 }
