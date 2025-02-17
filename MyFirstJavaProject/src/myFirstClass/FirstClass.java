@@ -67,5 +67,55 @@ public class FirstClass {
 		String upperCaseName = fullName.toUpperCase();
 		System.out.println("Uppercase name: " + upperCaseName);
 
+		/*
+		 * Contional and loops
+		 */
+
+		 //Conditional checking if x is even, using the modulus or % operator
+		 
+		System.out.println();
+		System.out.println("x: " + x);
+
+		if (x % 2 == 0) {
+			System.out.println(x + " is even");
+		} else {
+			System.out.println(x + " is odd");
+		}
+		
+		double e = 2.3;
+		double f = 2.4;
+		double g = 2.5;
+
+		// boolean operatoes
+		// && (and) - true only if both operands are true
+		if (e > 2 && e < f) {
+			System.out.println(e +" is between 2 and " + f);
+		}
+
+		//|| (or) - true if either one operand is true
+		if(f > 2 || f > g) {
+			System.out.println(f + " is greater than 2 or " + e + " or greater than " + g);
+		}
+
+		// ! (not) - reverses the truth value of its one operand
+		if (g != 2.6) {
+			System.out.println(g + " is not equal to 2.6");
+		}
+
+		// while loop
+		int i = 0;
+		while (i < 5) {
+			System.out.println("i: " + i);
+			i ++;
+		}	
+		
+		// for loop
+		System.out.println();
+		for (int k = 0; k < 10; k++) {
+			System.out.println("k: " + k);
+		}
+
+		// do while loop
+		
 	}
 }
