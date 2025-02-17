@@ -12,7 +12,7 @@ import java.util.Scanner;
  *  
  * Note: DO NOT skip any of the mini-programs or the automated testing will fail.
 */
-public class HelloWorld {
+public class Jinkyung_Kim_HelloWorld {
 	
 	public static void main(String[] args) {
 
@@ -184,5 +184,6 @@ public class HelloWorld {
 		//TODO: Add your code here
 		String goodbyeName = scanner.next();
 		System.out.println("Goodbye, " + goodbyeName + "!");
+		scanner.close();
 	}
 }
