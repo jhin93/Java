@@ -1,9 +1,15 @@
 package myFirstClass;
-
+/**
+ * My first Java class
+ */
 import java.util.Scanner;
 
 public class FirstClass {
 
+	/**
+	 * This is the main method, the entry point to any Java program.
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		// Printing using SOPL : Short for System.out.println
