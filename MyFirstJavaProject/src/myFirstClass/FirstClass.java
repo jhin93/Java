@@ -177,5 +177,23 @@ public class FirstClass {
 
 		  // close the Scanner
 		  scan.close();
+	}  // end of main method
+	
+	public class ClassName {
+		// The fields (instance variables) of the object
+		String name; // declaration to stor a String in the object
+		int age = 0; // declaration to store an int in the object, initialized to 0
+		double health; // declaration to store a double in the object
+
+		// The constructor of the object
+		public ClassName(String name, int age, double health) {
+			this.name = name;
+			this.age = age;
+			this.health = health;
+		}
+
+		String getName(String name) { // return type is String
+			return name;
+		}
 	}
-}
+}  // end of FirstClass

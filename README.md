@@ -11,7 +11,7 @@ public class FirstClass {
 	public static void main(String[] args) {
 		
 		// Class and Object
-		/*
+		
 		public class Car {
 			String model;
 			int year;
@@ -21,12 +21,30 @@ public class FirstClass {
 			}
 		}
 
-		// 인스턴스 생성
+		// 인스턴스 생성. Object 이기도 하다. myCar는 메모리에 할당된 구체적인 데이터 구조, 즉 객체.
 		Car myCar = new Car();
 		myCar.model = "Tesla";
 		myCar.year = 2023;
 		myCar.drive();
-		*/
+
+		public class ClassName {
+			// The fields (instance variables) of the object
+			String name; // declaration to stor a String in the object
+			int age = 0; // declaration to store an int in the object, initialized to 0
+			double health; // declaration to store a double in the object
+
+			// The constructor of the object
+			public ClassName(String name, int age, double health) {
+				this.name = name;
+				this.age = age;
+				this.health = health;
+			}
+
+			String getName(String name) { // return type is String
+				return name;
+			}
+		}
+		
 		
 		// Printing using SOPL : Short for System.out.println
 		System.out.println("Hello world!");
