@@ -10,6 +10,24 @@ public class FirstClass {
 
 	public static void main(String[] args) {
 		
+		// Class and Object
+		/*
+		public class Car {
+			String model;
+			int year;
+
+			public void drive() {
+				System.out.println("Driving the " + model);
+			}
+		}
+
+		// 인스턴스 생성
+		Car myCar = new Car();
+		myCar.model = "Tesla";
+		myCar.year = 2023;
+		myCar.drive();
+		*/
+		
 		// Printing using SOPL : Short for System.out.println
 		System.out.println("Hello world!");
 		System.out.println(""); // print a blank line
