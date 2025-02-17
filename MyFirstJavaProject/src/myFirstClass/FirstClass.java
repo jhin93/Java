@@ -1,5 +1,7 @@
 package myFirstClass;
 
+import java.util.Scanner;
+
 public class FirstClass {
 
 	public static void main(String[] args) {
@@ -141,5 +143,33 @@ public class FirstClass {
 		 //cast to Object then call getClass()
 		 System.out.println(((Object)stringToDouble).getClass());
 		 
+		 /*
+		  * User Input
+		  */
+
+		  // Create a Scanner object
+		  Scanner scan = new Scanner(System.in);
+
+		  // Prompt the user for input
+		  System.out.println("Enter a number: ");
+		  int myInt = scan.nextInt(); // get next input as int
+		  System.out.println("Your number is: " + myInt);
+		
+
+		  // print the multiplication table up to 10 for myInt
+		  for (int t = 1; t < 11; t++) {
+			System.out.println(t + " x " + myInt + ":  + " + (t * myInt));
+		  }
+		  System.out.println();
+		  System.out.println("Enter a String : ");
+		  String myStr = scan.next();
+
+		  // print each char in myStr separately
+		  for (int u = 0; u < myStr.length(); u++) {
+			System.out.println(myStr.charAt(u));
+		  }
+
+		  // close the Scanner
+		  scan.close();
 	}
 }

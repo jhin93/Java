@@ -6,95 +6,6 @@
 * They can't call methods on them ex) boolean.length() is invalid, int.getClass() is invalid
 */
 
-
-// Printing using SOPL : Short for System.out.println
-System.out.println("Hello world!");
-System.out.println(""); // print a blank line
-
-/*
-    * Defining variables
-    */
-
-int x = 5;
-
-double y = 5.0;
-
-boolean flag = true;
-
-System.out.println("x: " + x);
-System.out.println("y: " + y);
-System.out.println("flag: " + flag);
-
-/*
-    * Strings and characters
-    */
-
-String dept = "cit"; //String
-char letter = 'a'; // char
-
-String course = dept + 590; // String with int
-String grade = letter + ""; // char with String
-
-String courseInformation = course + ": " + grade;
-System.out.println(courseInformation);
-
-/*
-    * Math operations
-    */
-
-double d = 2 * x + 10;
-double z = 2 * y + 5;
-
-System.out.println("");
-System.out.println("d: " + d);
-System.out.println("z: " + z);
-
-// division with ints
-// uses integer division and ignores the remainder
-System.out.println("x / 2: " + (x / 2)); // x / 2: 2
-
-// division with floats
-System.out.println("x / 2.0: " + (x / 2.0)); // x / 2.0: 2.5
-
-// power operation
-System.out.println("x pow 4: " + Math.pow(x, 4)); // x pow 4: 625.0
-		
-
-// Studying Java programming language
-
-// print vs println
-System.out.println("Hello, World!");
-System.out.print("Hello, World!");
-
-// while loop
-int i = 0;
-while (i < 10) {
-    System.out.println(i);
-    i++;
-}
-
-// for loop
-for (int i = 0; i < 10; i++) {
-    System.out.println(i);
-}
-
-// Getting user input
-// import Scanner class
-import java.util.Scanner;
-
-// create Scanner object
-Scanner scanner = new Scanner(System.in); // System.in tells Java that the input is coming from the keyboard
-
-int myNumber = scanner.nextInt(); // nextInt() is used to get the next integer from the user
-
-String myString = scanner.nextLine(); // nextLine() is used to get the next line of input from the user
-
-// get user input
-String myLine = scanner.nextLine(); // nextLine() is used to get the next line of input from the user
-
-// close Scanner object
-scanner.close();
-
 public class FirstClass {
 
 	public static void main(String[] args) {
@@ -210,9 +121,62 @@ public class FirstClass {
 			System.out.println("k: " + k);
 		}
 
-		// do while loop
+		/*
+		 *  Casting
+		 */
 		
+		 // Cast int to String
+		 String intToString = Integer.toString(1);
+
+		 // Cast double to String
+		 String doubleToString = Double.toString(1.1);
+
+		 // Print the values and type of values
+		 System.out.println();
+		 System.out.println(intToString + " " + intToString.getClass());
+		 System.out.println(doubleToString + " " + doubleToString.getClass());
+
+		 //Cast String to int
+		 int stringToInt = Integer.parseInt("1");
+
+		 //Cast String to double
+		 double stringToDouble = Double.parseDouble("1.1");
+
+		 //Print the values and type of values
+		 System.out.println(stringToDouble);
+		 //cast to Object then call getClass()
+		 System.out.println(((Object)stringToDouble).getClass());
+		 
+		 /*
+		  * User Input
+		  */
+
+		  // Create a Scanner object
+		  Scanner scan = new Scanner(System.in);
+
+		  // Prompt the user for input
+		  System.out.println("Enter a number: ");
+		  int myInt = scan.nextInt(); // get next input as int
+		  System.out.println("Your number is: " + myInt);
+		
+
+		  // print the multiplication table up to 10 for myInt
+		  for (int t = 1; t < 11; t++) {
+			System.out.println(t + " x " + myInt + ":  + " + (t * myInt));
+		  }
+		  System.out.println();
+		  System.out.println("Enter a String : ");
+		  String myStr = scan.next();
+
+		  // print each char in myStr separately
+		  for (int u = 0; u < myStr.length(); u++) {
+			System.out.println(myStr.charAt(u));
+		  }
+
+		  // close the Scanner
+		  scan.close();
 	}
 }
+
 
 ```
