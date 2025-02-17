@@ -139,7 +139,7 @@ public class FirstClass {
 		 System.out.println(doubleToString + " " + doubleToString.getClass());
 
 		 //Cast String to int
-		 int stringToInt = Integer.parseInt("1");
+		//  int stringToInt = Integer.parseInt("1");
 
 		 //Cast String to double
 		 double stringToDouble = Double.parseDouble("1.1");
