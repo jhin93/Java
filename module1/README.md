@@ -1,8 +1,6 @@
 
 ```java
 
-commit test
-
 /*
 * 8 Primitive Data Types in Java : boolean, char, byte, short, int, long, float, double
 * They can't call methods on them ex) boolean.length() is invalid, int.getClass() is invalid
