@@ -36,7 +36,19 @@ public class SimpleGame {
 	 */
 	public String convertTime(int seconds){
 		// TODO: Your code goes here
-		return null;
+		int hours = seconds / 3600;
+		int minutes = (seconds % 3600) / 60;
+		int remainingSeconds = seconds % 60;
+		String result = "";
+		if(seconds > 0) {
+			result = hours + ":" + minutes + ":" + remainingSeconds;
+		} else if(seconds == 0) {
+			result = "0:0:0";
+		} else if(seconds < 0) {
+			result = "-1:-1:-1";
+		}
+		System.out.println("The time is: " + result);
+		return result;
 	}
 
 	/**
@@ -51,13 +63,23 @@ public class SimpleGame {
 	 */
 	public int digitsSum(int input){
 		// TODO: Your code goes here
-		return 0;
+		int sum = 0;
+		if(input == 0) {
+			return 0;
+		} else {
+			while(input > 0) {
+				sum += input % 10;
+				input /= 10;
+			}
+		System.out.println(sum);
+		return sum;
+		}
 	}
 	
 	public static void main(String[] args) {
 		// Create an instance of the SimpleGame class.
 		// TODO: Your code goes here
-		
+		SimpleGame game = new SimpleGame();
 		Scanner sc = new Scanner(System.in);
 		
 		// Ask the user which game to play.
@@ -67,6 +89,19 @@ public class SimpleGame {
 		// If the user enters 2, ask for an integer and call the digitsSum method.
 		
 		// TODO: Your code goes here
+		System.out.println("");
+		System.out.println("Enter 1 to convert time or 2 to calculate the sum of digits: ");
+		int myInt = sc.nextInt();
+		
+		if(myInt == 1) {
+			System.out.println("Enter the seconds to convert: ");
+			int secondsToConvert = sc.nextInt();
+			game.convertTime(secondsToConvert);
+		} else if(myInt == 2) {
+			System.out.println("Enter the integer to add digits: ");
+			int integerToAddDigits = sc.nextInt();
+			game.digitsSum(integerToAddDigits);
+		}
 		
 		sc.close();
 	}	
