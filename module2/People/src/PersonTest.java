@@ -10,8 +10,10 @@ class PersonTest {
 		Person person2 = new Person("ted", 22);
 
 		//assertEquals uses === to compare primitives
+		// For Objects, this method compares using the 'equals method
+		
 		// let's compare the ages of person1 and person2
-		assertEquals(person1.age, person2.age);
+		assertEquals(person1.age, person2.age); 
 
 		// assertEquals uses equals() method implemented in Person class
 		assertNotEquals(person1, person2); // Not same name because of capital T
