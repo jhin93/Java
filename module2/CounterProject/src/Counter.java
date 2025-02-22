@@ -7,6 +7,7 @@ public class Counter {
 	
 	/*
 	 * Store internal count.
+	 * Default value is 0.
 	 */
 	int count;
 	
