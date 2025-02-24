@@ -94,5 +94,7 @@ public class BankAccount {
         return this.customer.getName() + " from " + this.customer.getAddress();
     }
     
-
+    public double balance() {
+        return this.balance;
+    }
 }
