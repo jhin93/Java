@@ -20,6 +20,11 @@ public class BankAccount {
      */
     Customer customer;
 
+    /*
+     * Fixed amount for quick withdrawals.
+     */
+    double fastcashAmount;
+
     // constructor
     /*
      * Creates a bank account with the given account type, balance, and customer.
@@ -29,6 +34,9 @@ public class BankAccount {
     public BankAccount(String accountType, Customer customer) {
         this.accountType = accountType;
         this.customer = customer;
+
+        // set initial fastcash amount
+        this.fastcashAmount = 60;
     }
 
     //methods
@@ -36,7 +44,9 @@ public class BankAccount {
      * Deposits the given amount.
      */
     public void deposit(double amount) {
-        this.balance += amount;
+        if(amount > 0){
+            this.balance += amount;
+        }
     }
 
     /*
@@ -47,6 +57,25 @@ public class BankAccount {
             throw new Exception("Amount is greater than balance");
         }
         this.balance -= amount;
+    }
+
+    
+    /*
+     * Withdraws the fast cash amount.
+     */
+    public void fastWithdraw() throws Exception {
+        // withdraw the given fast cash amount
+        this.withdraw(this.fastcashAmount);
+    }
+
+    /*
+     * Sets the fast cash amount.
+     */
+    public void setFastcashAmount(double amount) {
+        if(amount > 0){
+            this.fastcashAmount = amount;
+        }
+        
     }
 
     /*
