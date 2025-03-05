@@ -1,13 +1,13 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 class CounterTest {
 
 	Counter counter;//declare Counter for testing
 	
-	@BeforeEach
+	@Before
 	void setUp() throws Exception {
 		this.counter = new Counter(); // initialize counter before every test method
 	}
@@ -23,7 +23,7 @@ class CounterTest {
 		this.counter.increment();
 
 		// calling increment a third time should not return a count of 2
-		assertFalse(counter.getCount() == 2, "should not return 2 after calling increment a third time");
+		assertFalse("should not return 2 after calling increment a third time", counter.getCount() == 2);
 		// expect 3 when calling getCount
 		assertEquals(3, this.counter.getCount());
 		// expect 4 when calling increment a fourth time

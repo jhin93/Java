@@ -1,15 +1,15 @@
 package Banking;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.Before;
+import org.junit.Test;
 
 class CustomerTest {
 	// declare customer for testing
 	Customer customer;
 
-	@BeforeEach
+	@Before
 	void setUp() {
 		this.customer = new Customer("Brandon");
 	}
