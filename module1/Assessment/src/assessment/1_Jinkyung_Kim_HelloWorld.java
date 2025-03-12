@@ -1,3 +1,5 @@
+package assessment;
+
 import java.util.Scanner;
 
 /**
